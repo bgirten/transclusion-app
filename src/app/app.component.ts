@@ -12,7 +12,7 @@ import { MatStepper } from '@angular/material';
 
 export class AppComponent implements AfterContentInit {
 
-  title = 'Transclusion App';
+  componentTitle = 'Transclusion App';
   componentRef: ComponentRef<any>;
   stepperComponents = [];
   injector: Injector;

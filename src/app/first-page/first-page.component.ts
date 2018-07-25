@@ -6,17 +6,16 @@ import { DynamicInterface } from '../dynamic-component/dynamic-interface';
   templateUrl: './first-page.component.html',
   styleUrls: ['./first-page.component.css']
 })
+
 export class FirstPageComponent implements OnInit, DynamicInterface {
 
   payload: any;
-  title: string = 'First Page';
+  componentTitle: string = 'First Page';
   
   constructor() { }
 
-
   ngOnInit() {
   }
-
 
   resolveDynamicComponentClass() {
     return FirstPageComponent;

@@ -1,4 +1,5 @@
-import { Component, OnInit, AfterContentInit, Input, ComponentRef, ViewChild, ViewContainerRef, ComponentFactoryResolver, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit, AfterContentInit, Input, ComponentRef, ViewChild,
+         ViewContainerRef, ComponentFactoryResolver, ChangeDetectorRef } from '@angular/core';
 import { DynamicInterface } from './dynamic-interface';
 
 @Component({
