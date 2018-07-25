@@ -1,4 +1,14 @@
-<p>Transclusion App works!</p>
-<br>
-<br>
-<button (click)='launchDialog()'>Transclude</button>
+<header>
+    <h3>{{title}} works!</h3>
+</header>
+
+<section>
+    <mat-horizontal-stepper #stepper [linear]="false">
+        <div *ngFor="let stepperComponent of stepperComponents">
+            <mat-step [stepControl]="stepperComponent.formGroup">
+                <ng-template matStepLabel>{{stepperComponent.title}}</ng-template>
+                <dynamic-component [component]="stepperComponent"></dynamic-component>
+            </mat-step>
+        </div>
+    </mat-horizontal-stepper>
+</section>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DynamicInterface } from '../dynamic-interface';
+import { DynamicInterface } from '../dynamic-component/dynamic-interface';
 
 @Component({
   selector: 'app-first-page',
@@ -9,7 +9,7 @@ import { DynamicInterface } from '../dynamic-interface';
 export class FirstPageComponent implements OnInit, DynamicInterface {
 
   payload: any;
-  componentTitle: string = 'First Page';
+  title: string = 'First Page';
   
   constructor() { }
 

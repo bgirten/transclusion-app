@@ -1,8 +1,0 @@
-<mat-horizontal-stepper #stepper [linear]="false">
-  <div *ngFor="let stepperComponent of stepperComponents">
-    <mat-step [stepControl]="stepperComponent.formGroup">
-      <ng-template matStepLabel>{{stepperComponent.componentTitle}}</ng-template>
-      <dynamic-component [component]="stepperComponent" [payload]="payload"></dynamic-component>
-    </mat-step>
-  </div>
-</mat-horizontal-stepper>
